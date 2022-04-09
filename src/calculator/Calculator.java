@@ -44,6 +44,7 @@ public class Calculator {
             if (arabianNumbersTrue) {
                 i1 = Integer.parseInt(s1);
                 i3 = Integer.parseInt(s3);
+
             }
         }
 
