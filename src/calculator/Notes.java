@@ -1,5 +1,7 @@
 package calculator;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -24,5 +26,17 @@ public class Notes {
         while (matcher1.find()){
             System.out.println(matcher1.group());
         }
+
+        StringBuilder sb1 = new StringBuilder("A");
+        StringBuilder sb2 = new StringBuilder("B");
+        StringBuilder sb3 = new StringBuilder("C");
+
+        StringBuilder [] stringBuilders = {sb1, sb2, sb3};
+        stringBuilders[2]=new StringBuilder("D");
+
+        List<StringBuilder> stringBuilderList = Arrays.asList(stringBuilders);
+        System.out.println(stringBuilderList);
+
+
     }
 }
